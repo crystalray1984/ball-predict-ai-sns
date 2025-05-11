@@ -1,0 +1,32 @@
+{
+    "name": "zhiyicx/plus-pc",
+    "authors": [
+        {
+            "name": "Foreach",
+            "email": "missu082500@163.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Zhiyi\\Component\\ZhiyiPlus\\PlusComponentPc\\": "src/",
+            "SlimKit\\PlusPc\\Database\\Seeders\\": "database/seeds"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zhiyi\\Component\\ZhiyiPlus\\PlusComponentPc\\PcServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "overtrue/socialite": "^3.0",
+        "gregwar/captcha": "1.*",
+        "michelf/php-markdown": "^1.9"
+    },
+    "version": "2.4.1"
+}
